@@ -4,5 +4,28 @@ module.exports = {
 	theme: {
 		extend: {}
 	},
-	plugins: [require('daisyui')],
+	daisyui: {
+		themes: [
+			{
+				mytheme: {
+					primary: '#54e5ca',
+
+					secondary: '#f7998c',
+
+					accent: '#52db08',
+
+					neutral: '#2d2a37',
+
+					info: '#9daff1',
+
+					success: '#29c7ad',
+
+					warning: '#fba651',
+
+					error: '#e1624c'
+				}
+			}
+		]
+	},
+	plugins: [require('daisyui')]
 }
