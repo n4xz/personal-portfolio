@@ -1,0 +1,63 @@
+---
+import html from '../images/technologies/html.svg'
+import css from '../images/technologies/css.svg'
+import javascript from '../images/technologies/javascript.svg'
+import react from '../images/technologies/react.svg'
+import astro from '../images/technologies/astro.svg'
+import tailwind from '../images/technologies/tailwind.svg'
+import bootstrap from '../images/technologies/bootstrap.svg'
+import git from '../images/technologies/git.svg'
+---
+
+<div class='w-screen backdrop-blur-sm backdrop-brightness-150 mb-12'>
+	<div class='max-w-7xl mx-auto flex flex-col gap-8 px-8 py-24'>
+		<div class='grid grid-cols-3 items-center gap-3 p-6'>
+			<div class='h-[1px] bg-white/20'></div>
+			<p class='min-w-fit text-center font-thin text-white/80 md:text-lg'>Technologies</p>
+			<div class='h-[1px] bg-white/20'></div>
+		</div>
+
+		<div class='flex flex-wrap justify-center gap-3 pb-6 md:px-8'>
+			<div
+				class='mask mask-hexagon bg-white h-24 w-24 flex items-center justify-center transition-all duration-300 hover:bg-orange-100 hover:mask-squircle hover:cursor-pointer'
+			>
+				<img class='translate-y-1' src={html} alt='html' />
+			</div>
+			<div
+				class='mask mask-hexagon bg-white h-24 w-24 flex items-center justify-center transition-all duration-300 hover:bg-blue-100 hover:mask-squircle hover:cursor-pointer'
+			>
+				<img class='translate-y-1' src={css} alt='css' />
+			</div>
+			<div
+				class='mask mask-hexagon bg-white h-24 w-24 flex items-center justify-center transition-all duration-300 hover:bg-yellow-100 hover:mask-squircle hover:cursor-pointer'
+			>
+				<img src={javascript} alt='javascript' />
+			</div>
+			<div
+				class='mask mask-hexagon bg-white h-24 w-24 flex items-center justify-center transition-all duration-300 hover:bg-teal-100 hover:mask-squircle hover:cursor-pointer'
+			>
+				<img class='h-12' src={react} alt='react' />
+			</div>
+			<div
+				class='mask mask-hexagon bg-white h-24 w-24 flex items-center justify-center transition-all duration-300 hover:bg-orange-100 hover:mask-squircle hover:cursor-pointer'
+			>
+				<img class='h-12' src={astro} alt='astro' />
+			</div>
+			<div
+				class='mask mask-hexagon bg-white h-24 w-24 flex items-center justify-center transition-all duration-300 hover:bg-teal-100 hover:mask-squircle hover:cursor-pointer'
+			>
+				<img class='h-12' src={tailwind} alt='tailwind' />
+			</div>
+			<div
+				class='mask mask-hexagon bg-white h-24 w-24 flex items-center justify-center transition-all duration-300 hover:bg-purple-100 hover:mask-squircle hover:cursor-pointer'
+			>
+				<img src={bootstrap} alt='bootstrap' />
+			</div>
+			<div
+				class='mask mask-hexagon bg-white h-24 w-24 flex items-center justify-center transition-all duration-300 hover:bg-red-100 hover:mask-squircle'
+			>
+				<img class='h-12' src={git} alt='git' />
+			</div>
+		</div>
+	</div>
+</div>

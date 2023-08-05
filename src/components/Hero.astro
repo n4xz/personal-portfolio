@@ -1,0 +1,32 @@
+---
+import phone from '../images/socialmedia/phone.svg'
+import email from '../images/socialmedia/email.svg'
+---
+
+<div
+	class='flex flex-col items-center gap-4 py-16 w-screen text-center px-3 text-white max-w-7xl mx-auto'
+>
+	<h3 class='text-2xl font-thin animate-bounce md:text-4xl'>
+		Hi, my name is <strong>Mihai.</strong>
+	</h3>
+	<h1 class='text-4xl font-bold md:text-7xl'>UI/UX Designer & Web Developer</h1>
+	<div
+		class='flex gap-5 mt-6 px-6 py-3 backdrop-blur-sm backdrop-brightness-200 items-center rounded-lg md:hidden'
+	>
+		<a href='tel:+40731692494'>
+			<img
+				class='h-8 transition-all animate-pulse duration-300 hover:scale-125'
+				src={phone}
+				alt='phone icon'
+			/>
+		</a>
+		<div class='py-2'>|</div>
+		<a href='mailto:n4xz@icloud.com'>
+			<img
+				class='h-8 transition-all animate-pulse duration-300 hover:scale-125'
+				src={email}
+				alt='email icon'
+			/>
+		</a>
+	</div>
+</div>

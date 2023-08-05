@@ -1,142 +1,22 @@
 ---
 import Layout from '../layouts/Layout.astro'
+import Hero from '../components/Hero.astro'
+import Tech from '../components/Tech.astro'
+import Chat from '../components/Chat.astro'
 import Contact from '../components/Contact.astro'
-import EmailForm from '../components/EmailForm.astro'
-import facebook from '../images/socialmedia/facebook.svg'
-import instagram from '../images/socialmedia/instagram.svg'
-import linkedin from '../images/socialmedia/linkedin.svg'
-import github from '../images/socialmedia/github.svg'
-import whatsapp from '../images/socialmedia/whatsapp.svg'
-import email from '../images/socialmedia/email.svg'
-import html from '../images/technologies/html.svg'
-import css from '../images/technologies/css.svg'
-import javascript from '../images/technologies/javascript.svg'
-import react from '../images/technologies/react.svg'
-import astro from '../images/technologies/astro.svg'
-import tailwind from '../images/technologies/tailwind.svg'
-import bootstrap from '../images/technologies/bootstrap.svg'
-import git from '../images/technologies/git.svg'
-import avatar from '../images/avatar.png'
+// import uparrow from '../images/uparrow.svg'
 ---
 
 <Layout
-	title='Working on it, meanwhile check my other platforms.'
+	title='Mihai Postelnicu - UI/UX Designer & Web Developer based in Bucharest, Romania'
 >
 	<main>
-	<div
-		class='bg-black h-screen w-screen text-white text-center flex flex-col items-center justify-center px-5 gap-5'
-	>
-		<img class=" h-72" src={avatar} alt="avatar">
-		<h2 class='text-3xl font-thin'>This website is not ready yet, but will be soon...</h2>
-		<h2 class='text-md'>Until then, you can find me on those platforms:</h2>
-		<div class='flex justify-evenly items-center'>
-			<a
-				href='https://www.facebook.com/profile.php?id=100094704651380'
-				target='_blank'
-			>
-				<img src={facebook} alt='facebook icon' />
-			</a>
-			<a href='https://wa.me/+40731692494' target='_blank'>
-				<img src={whatsapp} alt='whatsapp icon' />
-			</a>
-			<a href='https://github.com/n4xz' target='_blank'>
-				<img src={github} alt='github icon' />
-			</a>
-			<a href='https://www.linkedin.com/in/mihaipostelnicu/' target='_blank'>
-				<img src={linkedin} alt='linkedin icon' />
-			</a>
-			<a href='https://www.instagram.com/mihaipostelnicuu/' target='_blank'>
-				<img class='h-12' src={instagram} alt='instagram icon' />
-			</a>
-			<a href='mailto: n4xz@icloud.com'>
-				<img class='h-10 bg-white rounded-lg' src={email} alt='email icon' />
-			</a>
-		</div>
-	</div>
-		<!-- <section
-			class='flex flex-col items-center gap-4 py-16 w-screen text-center px-3'
-		>
-			<h3 class='text-2xl font-thin'>Hi, my name is <strong>Mihai</strong></h3>
-			<h1 class='text-4xl font-bold'>UI/UX Designer & Web Developer</h1>
-		</section>
-
-		<section
-			class='flex flex-col bg-neutral-100 w-screen px-8 py-16 gap-8 mx-auto items-center shadow-inner'
-		>
-			<div class='grid grid-cols-3 items-center gap-3'>
-				<div class='h-[1px] bg-neutral-300'></div>
-				<p class='min-w-fit font-thin text-neutral-500'>Technologies</p>
-				<div class='h-[1px] bg-neutral-300'></div>
-			</div>
-
-			<div class='flex flex-wrap justify-center gap-3'>
-				<div
-					class='mask mask-hexagon bg-white h-24 w-24 flex items-center justify-center transition-all duration-300 hover:bg-orange-100 hover:mask-squircle'
-				>
-					<img class='translate-y-1' src={html} alt='html' />
-				</div>
-				<div
-					class='mask mask-hexagon bg-white h-24 w-24 flex items-center justify-center transition-all duration-300 hover:bg-blue-100 hover:mask-squircle'
-				>
-					<img class='translate-y-1' src={css} alt='css' />
-				</div>
-				<div
-					class='mask mask-hexagon bg-white h-24 w-24 flex items-center justify-center transition-all duration-300 hover:bg-yellow-100 hover:mask-squircle'
-				>
-					<img src={javascript} alt='javascript' />
-				</div>
-				<div
-					class='mask mask-hexagon bg-white h-24 w-24 flex items-center justify-center transition-all duration-300 hover:bg-teal-100 hover:mask-squircle'
-				>
-					<img class='h-12' src={react} alt='react' />
-				</div>
-				<div
-					class='mask mask-hexagon bg-white h-24 w-24 flex items-center justify-center transition-all duration-300 hover:bg-orange-100 hover:mask-squircle'
-				>
-					<img class='h-12' src={astro} alt='astro' />
-				</div>
-				<div
-					class='mask mask-hexagon bg-white h-24 w-24 flex items-center justify-center transition-all duration-300 hover:bg-teal-100 hover:mask-squircle'
-				>
-					<img class='h-12' src={tailwind} alt='tailwind' />
-				</div>
-				<div
-					class='mask mask-hexagon bg-white h-24 w-24 flex items-center justify-center transition-all duration-300 hover:bg-purple-100 hover:mask-squircle'
-				>
-					<img src={bootstrap} alt='bootstrap' />
-				</div>
-				<div
-					class='mask mask-hexagon bg-white h-24 w-24 flex items-center justify-center transition-all duration-300 hover:bg-red-100 hover:mask-squircle'
-				>
-					<img class='h-12' src={git} alt='git' />
-				</div>
-			</div>
-		</section> -->
-		<!-- <section>
-			<div class='flex pb-12 justify-evenly md:max-w-lg'>
-				<a
-					href='https://www.facebook.com/profile.php?id=100094704651380'
-					target='_blank'
-				>
-					<img src={facebook} alt='facebook icon' />
-				</a>
-				<a href='https://wa.me/+40731692494' target='_blank'>
-					<img src={whatsapp} alt='whatsapp icon' />
-				</a>
-				<a href='https://github.com/n4xz' target='_blank'>
-					<img src={github} alt='github icon' />
-				</a>
-				<a href='https://www.linkedin.com/in/mihaipostelnicu/' target='_blank'>
-					<img src={linkedin} alt='linkedin icon' />
-				</a>
-				<a href='https://www.instagram.com/mihaipostelnicuu/' target='_blank'>
-					<img class='h-12' src={instagram} alt='instagram icon' />
-				</a>
-				<a href='mailto: n4xz@icloud.com'>
-					<img class='h-12' src={email} alt='email icon' />
-				</a>
-			</div>
-		</section> -->
-		<!-- <EmailForm /> -->
+		<!-- <a href='#header' class='w-10 h-10 bg-white animate-bounce rounded-full fixed bottom-10 right-10 z-40 shadow-2xl flex items-center justify-center text-black font-extrabold opacity-70 md:hover:opacity-100 active:opacity-100'>
+			<img class='h-6' src={uparrow} />
+		</a> -->
+		<Hero />
+		<Tech />
+		<Chat />
+		<Contact />
 	</main>
 </Layout>

@@ -1,0 +1,32 @@
+---
+import steve from '../images/chat-photos/steve.webp'
+import mihai from '../images/chat-photos/mihai.png'
+---
+
+<div class='px-8 py-12 text-sm max-w-xl mx-auto'>
+	<div class='chat chat-start'>
+		<div class='chat-image avatar'>
+			<div class='w-10 rounded-full'>
+				<img src={steve} />
+			</div>
+		</div>
+		<div class='chat-header text-xs opacity-70'>
+			Steve Harvey
+			<time class='text-xs opacity-50'>12:45</time>
+		</div>
+		<div class='chat-bubble chat-bubble-info'>
+			Where can I find you? <br /> I have a project in mind.
+		</div>
+	</div>
+	<div class='chat chat-end'>
+		<div class='chat-image avatar'>
+			<div class='w-10 rounded-full'>
+				<img src={mihai} />
+			</div>
+		</div>
+		<div class='chat-bubble chat-bubble-success'>
+			You have everything you need down bellow.
+		</div>
+		<div class='chat-footer opacity-50 text-xs'>Seen at 12:46</div>
+	</div>
+</div>

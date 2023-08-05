@@ -3,7 +3,102 @@ import facebook from '../images/socialmedia/facebook.svg'
 import github from '../images/socialmedia/github.svg'
 import linkedin from '../images/socialmedia/linkedin.svg'
 import whatsapp from '../images/socialmedia/whatsapp.svg'
-import email from '../images/socialmedia/email.svg'
+import twitter from '../images/socialmedia/twitter.svg'
 import instagram from '../images/socialmedia/instagram.svg'
 ---
 
+<article id="contact" class='w-screen backdrop-blur-sm backdrop-brightness-150 mt-12 py-24'>
+	<div class='max-w-7xl mx-auto py-8 px-8'>
+		<div class='grid grid-cols-3 items-center gap-3 pb-8'>
+			<div class='h-[1px] bg-white/20'></div>
+			<p class='min-w-fit text-center font-thin text-white/80 md:text-lg'>Contact</p>
+			<div class='h-[1px] bg-white/20'></div>
+		</div>
+		<div class='max-w-md mx-auto flex justify-between items-center gap-4 pt-8 md:px-8'>
+			<a
+				class='hover:-translate-y-2 transition-all duration-300'
+				href='https://www.facebook.com/profile.php?id=100094704651380'
+				target='_blank'
+			>
+				<img class='h-[38px]' src={facebook} alt='facebook icon' />
+			</a>
+			<a
+				class='hover:-translate-y-2 transition-all duration-300'
+				href='https://www.linkedin.com/in/mihaipostelnicu/'
+				target='_blank'
+			>
+				<img class='h-[36px]' src={linkedin} alt='linkedin icon' />
+			</a>
+			<a
+				class='hover:-translate-y-2 transition-all duration-300'
+				href='https://www.instagram.com/mihaipostelnicuu/'
+				target='_blank'
+			>
+				<img class='h-[38px]' src={instagram} alt='instagram icon' />
+			</a>
+			<a
+				class='hover:-translate-y-2 transition-all duration-300'
+				href='https://wa.me/+40731692494'
+				target='_blank'
+			>
+				<img class='h-8 px-1' src={whatsapp} alt='whatsapp icon' />
+			</a>
+			<a
+				class='hover:-translate-y-2 transition-all duration-300'
+				href='https://github.com/n4xz'
+				target='_blank'
+			>
+				<img class='h-8 px-1' src={github} alt='github icon' />
+			</a>
+			<a
+				class='hover:-translate-y-2 transition-all duration-300'
+				href='https://twitter.com/n4xzz'
+				target='_blank'
+			>
+				<img
+					class='h-[36px] translate-y-[1px]'
+					src={twitter}
+					alt='twitter / x icon'
+				/>
+			</a>
+		</div>
+	</div>
+	<form
+		name='contact'
+		method='POST'
+		data-netlify='true'
+		onsubmit='submit'
+		class='rounded-lg pb-8 px-8 flex flex-col justify-evenly gap-6 max-w-md mx-auto'
+	>
+		<label class='text-white font-thin text-sm'
+			>Your Name: <input
+				class='bg-neutral-100 min-w-full rounded-lg px-4 py-3 mt-3 text-black focus:outline-none'
+				type='text'
+				name='name'
+
+			/></label
+		>
+		<hr class='opacity-20' />
+
+		<label class='text-white font-thin text-sm'
+			>Your Email: <input
+				class='bg-neutral-100 min-w-full rounded-lg px-4 py-3 mt-3 text-black focus:outline-none'
+				type='email'
+				name='email'
+			/></label
+		>
+		<hr class='opacity-20' />
+
+		<label class='text-white font-thin text-sm'
+			>Message: <textarea
+				class='bg-neutral-100 min-w-full rounded-lg px-4 py-3 mt-3 text-black focus:outline-none'
+				name='message'></textarea></label
+		>
+		<hr class='opacity-20' />
+		<p class='text-center'>
+			<button class='px-8 py-2 bg-neutral-100 text-neutral rounded-lg mt-4' type='submit'
+				>Send</button
+			>
+		</p>
+	</form>
+</article>
