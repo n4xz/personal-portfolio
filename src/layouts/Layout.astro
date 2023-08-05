@@ -14,10 +14,28 @@ import Footer from '../components/structure/Footer.astro'
 <html lang='en' class='bg-[#080808] scroll-smooth'>
 	<head>
 		<meta charset='UTF-8' />
-		<meta name='description' content='Astro description' />
+		<meta
+			name='description'
+			content='Elevate your brand with a professional website  - UI/UX Designer & Web Developer in Bucharest, Romania. #html #css #javascript #react #astro #tailwind'
+		/>
 		<meta name='viewport' content='width=device-width' />
 		<meta name='generator' content={Astro.generator} />
-		<link rel="icon" href="../../public/favicon.ico" type="image/x-icon">
+		<link rel='icon' href='/favicon.ico' type='image/x-icon' />
+		<script async src='https://www.googletagmanager.com/gtag/js?id=G-L7V55PFYCF'
+		></script>
+		<script>
+			window.dataLayer = window.dataLayer || []
+			function gtag() {
+				dataLayer.push(arguments)
+			}
+			gtag('js', new Date())
+
+			gtag('config', 'G-L7V55PFYCF')
+		</script>
+		<meta
+			name='google-site-verification'
+			content='dcvxSJjVF2vSMN7HxsQ9Yos7HjcDeuyn_tnwba60e1A'
+		/>
 		<title>{title}</title>
 	</head>
 	<body class='text-neutral-100 scroll-smooth'>
