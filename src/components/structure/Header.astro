@@ -4,7 +4,7 @@ import email from '../../images/socialmedia/email.svg'
 ---
 
 <header
-	class='flex justify-between items-center mx-auto pt-8 pb-4 px-12 text-white max-w-7xl lg:pt-10'
+	class='flex justify-between items-center mx-auto pt-8 pb-4 px-12  max-w-7xl lg:pt-10'
 >
 	<h1
 		class='text-5xl font-bold leading-tight -translate-y-1 hover:cursor-pointer'
@@ -13,7 +13,12 @@ import email from '../../images/socialmedia/email.svg'
 	</h1>
 
 	<div class='drawer z-50 max-w-min md:hidden'>
-		<input id='my-drawer' type='checkbox' class='drawer-toggle' />
+		<input
+			id='my-drawer'
+			type='checkbox'
+			class='drawer-toggle'
+			alt='hamburger menu icon'
+		/>
 		<label for='my-drawer' class='drawer-button'>
 			<svg
 				xmlns='http://www.w3.org/2000/svg'
@@ -29,15 +34,29 @@ import email from '../../images/socialmedia/email.svg'
 		>
 		<div class='drawer-side'>
 			<label for='my-drawer' class='drawer-overlay'></label>
-			<ul class='menu p-4 w-72 h-full bg-black/95'>
+			<ul class='menu pl-8 pr-24 h-full bg-black/95'>
 				<h1 class='text-5xl font-bold px-4 py-8'>mp.</h1>
-				<hr class='opacity-10' />
+				<li class='opacity-10 h-[1px] bg-white w-full'></li>
+				<li><a href='#about' class='text-4xl font-bold'>about</a></li>
+				<li><a href='#projects' class='text-4xl font-bold'>projects</a></li>
 				<li><a href='#contact' class='text-4xl font-bold'>contact</a></li>
 			</ul>
 		</div>
 	</div>
 
-	<nav class='hidden font-thin text-lg md:flex md:items-center md:gap-8'>
+	<nav class='hidden text-lg md:flex md:items-center md:gap-8'>
+		<a
+			href='#about'
+			class='hover:cursor-pointer hover:scale-125 transition-all duration-300 text-xl'
+		>
+			about
+		</a>
+		<a
+			href='#projects'
+			class='hover:cursor-pointer hover:scale-125 transition-all duration-300 text-xl'
+		>
+			projects
+		</a>
 		<a
 			href='#contact'
 			class='hover:cursor-pointer hover:scale-125 transition-all duration-300 text-xl'

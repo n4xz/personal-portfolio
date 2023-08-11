@@ -1,0 +1,36 @@
+---
+import portfolio from '../images/project-screenshots/portfolio.png'
+import tools from '../images/project-screenshots/tools.png'
+import coming from '../images/project-screenshots/coming.png'
+---
+
+<article id='projects'>
+	<div
+		class='w-screen backdrop-blur-sm backdrop-brightness-150 mb-12 text-center'
+	>
+		<div class='max-w-7xl mx-auto flex flex-col gap-5 px-8 py-24'>
+			<div class='grid grid-cols-3 items-center gap-3 p-6'>
+				<div class='h-[1px] bg-white/20'></div>
+				<p class='min-w-fit text-center md:text-lg'>Projects</p>
+				<div class='h-[1px] bg-white/20'></div>
+			</div>
+			<div
+				class='carousel carousel-center max-w-7xl mx-auto p-4 space-x-4 bg-white/5 rounded-box'
+			>
+				<div class='carousel-item'>
+					<a href='https://mihaipostelnicu.com'>
+						<img class='h-80' src={portfolio} class='rounded-box' />
+					</a>
+				</div>
+				<div class='carousel-item'>
+					<a href='https://tools-app.netlify.app/'>
+						<img class='h-80' src={tools} class='rounded-box' />
+					</a>
+				</div>
+				<div class='carousel-item flex items-center'>
+					<div class=''>More coming soon...</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</article>

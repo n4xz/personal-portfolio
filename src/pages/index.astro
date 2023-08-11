@@ -4,19 +4,39 @@ import Hero from '../components/Hero.astro'
 import Tech from '../components/Tech.astro'
 import Chat from '../components/Chat.astro'
 import Contact from '../components/Contact.astro'
-// import uparrow from '../images/uparrow.svg'
+import About from '../components/About.astro'
+import uparrow from '../images/uparrow.svg'
+import Projects from '../components/Projects.astro'
 ---
 
 <Layout
 	title='Mihai Postelnicu - UI/UX Designer & Web Developer based in Bucharest, Romania'
 >
 	<main>
-		<!-- <a href='#header' class='w-10 h-10 bg-white animate-bounce rounded-full fixed bottom-10 right-10 z-40 shadow-2xl flex items-center justify-center text-black font-extrabold opacity-70 md:hover:opacity-100 active:opacity-100'>
+		<div
+			id='scrollToTopButton'
+			class='w-10 h-10 bg-white animate-bounce rounded-full fixed bottom-10 right-10 z-40 shadow-2xl flex items-center justify-center text-black font-extrabold opacity-70 md:hover:cursor-pointer md:hover:opacity-100 active:opacity-100'
+		>
 			<img class='h-6' src={uparrow} />
-		</a> -->
+		</div>
 		<Hero />
+		<About />
 		<Tech />
+		<Projects />
 		<Chat />
 		<Contact />
 	</main>
 </Layout>
+
+<script>
+	document.addEventListener('DOMContentLoaded', function () {
+		const scrollToTopButton = document.getElementById('scrollToTopButton')
+
+		scrollToTopButton.addEventListener('click', function () {
+			window.scrollTo({
+				top: 0,
+				behavior: 'smooth'
+			})
+		})
+	})
+</script>

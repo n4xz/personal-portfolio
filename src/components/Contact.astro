@@ -7,14 +7,19 @@ import twitter from '../images/socialmedia/twitter.svg'
 import instagram from '../images/socialmedia/instagram.svg'
 ---
 
-<article id="contact" class='w-screen backdrop-blur-sm backdrop-brightness-150 mt-12 py-24'>
+<article
+	id='contact'
+	class='w-screen backdrop-blur-sm backdrop-brightness-150 mt-12 py-24'
+>
 	<div class='max-w-7xl mx-auto py-8 px-8'>
 		<div class='grid grid-cols-3 items-center gap-3 pb-8'>
 			<div class='h-[1px] bg-white/20'></div>
-			<p class='min-w-fit text-center font-thin text-white/80 md:text-lg'>Contact</p>
+			<p class='min-w-fit text-center md:text-lg'>Contact</p>
 			<div class='h-[1px] bg-white/20'></div>
 		</div>
-		<div class='max-w-md mx-auto flex justify-between items-center gap-4 pt-8 md:px-8'>
+		<div
+			class='max-w-md mx-auto flex justify-between items-center gap-4 pt-8 md:px-8'
+		>
 			<a
 				class='hover:-translate-y-2 transition-all duration-300'
 				href='https://www.facebook.com/profile.php?id=100094704651380'
@@ -58,7 +63,7 @@ import instagram from '../images/socialmedia/instagram.svg'
 				<img
 					class='h-[36px] translate-y-[1px]'
 					src={twitter}
-					alt='twitter / x icon'
+					alt='twitter icon / x icon'
 				/>
 			</a>
 		</div>
@@ -70,17 +75,16 @@ import instagram from '../images/socialmedia/instagram.svg'
 		onsubmit='submit'
 		class='rounded-lg pb-8 px-8 flex flex-col justify-evenly gap-6 max-w-md mx-auto'
 	>
-		<label class='text-white font-thin text-sm'
+		<label class='text-sm'
 			>Your Name: <input
 				class='bg-neutral-100 min-w-full rounded-lg px-4 py-3 mt-3 text-black focus:outline-none'
 				type='text'
 				name='name'
-
 			/></label
 		>
 		<hr class='opacity-20' />
 
-		<label class='text-white font-thin text-sm'
+		<label class='text-sm'
 			>Your Email: <input
 				class='bg-neutral-100 min-w-full rounded-lg px-4 py-3 mt-3 text-black focus:outline-none'
 				type='email'
@@ -89,15 +93,16 @@ import instagram from '../images/socialmedia/instagram.svg'
 		>
 		<hr class='opacity-20' />
 
-		<label class='text-white font-thin text-sm'
+		<label class='text-sm'
 			>Message: <textarea
 				class='bg-neutral-100 min-w-full rounded-lg px-4 py-3 mt-3 text-black focus:outline-none'
 				name='message'></textarea></label
 		>
 		<hr class='opacity-20' />
 		<p class='text-center'>
-			<button class='px-8 py-2 bg-neutral-100 text-neutral rounded-lg mt-4' type='submit'
-				>Send</button
+			<button
+				class='px-8 py-2 bg-neutral-100 text-neutral rounded-lg mt-4 transition-all duration-300 hover:scale-90 active:scale-90'
+				type='submit'>Send</button
 			>
 		</p>
 	</form>
