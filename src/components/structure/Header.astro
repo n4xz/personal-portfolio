@@ -4,13 +4,14 @@ import email from '../../images/socialmedia/email.svg'
 ---
 
 <header
-	class='flex justify-between items-center mx-auto pt-8 pb-4 px-12  max-w-7xl lg:pt-10'
+	class='flex justify-between items-center mx-auto pt-8 pb-4 px-12 max-w-7xl lg:pt-10'
 >
-	<h1
+	<button
+		id='refreshButton'
 		class='text-5xl font-bold leading-tight -translate-y-1 hover:cursor-pointer'
 	>
 		mp.
-	</h1>
+	</button>
 
 	<div class='drawer z-50 max-w-min md:hidden'>
 		<input
@@ -35,7 +36,7 @@ import email from '../../images/socialmedia/email.svg'
 		<div class='drawer-side'>
 			<label for='my-drawer' class='drawer-overlay'></label>
 			<ul class='menu pl-8 pr-24 h-full bg-black/95'>
-				<h1 class='text-5xl font-bold px-4 py-8'>mp.</h1>
+				<button id='refreshButton2' class='text-5xl font-bold px-4 py-8'>mp.</button>
 				<li class='opacity-10 h-[1px] bg-white w-full'></li>
 				<li><a href='#about' class='text-4xl font-bold'>about</a></li>
 				<li><a href='#projects' class='text-4xl font-bold'>projects</a></li>
@@ -72,7 +73,7 @@ import email from '../../images/socialmedia/email.svg'
 				alt='phone icon'
 			/>
 		</a>
-		<a href='mailto:n4xz@icloud.com'>
+		<a href='mailto:n4xz@icloud.com?subject=I want a website!&body=My business needs online exposure...'>
 			<img
 				class='h-8 transition-all animate-pulse duration-300 hover:scale-125'
 				src={email}
@@ -81,3 +82,16 @@ import email from '../../images/socialmedia/email.svg'
 		</a>
 	</div>
 </header>
+
+<script>
+	document
+		.getElementById('refreshButton')
+		.addEventListener('click', function () {
+			window.location.reload()
+		})
+	document
+		.getElementById('refreshButton2')
+		.addEventListener('click', function () {
+			window.location.reload()
+		})
+</script>
