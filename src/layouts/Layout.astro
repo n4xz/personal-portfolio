@@ -27,6 +27,17 @@ import Footer from '../components/structure/Footer.astro'
 		/>
 		<title>{title}</title>
 	</head>
+	<script async src='https://www.googletagmanager.com/gtag/js?id=G-V1QPMRWL3F'
+	></script>
+	<script>
+		window.dataLayer = window.dataLayer || []
+		function gtag() {
+			dataLayer.push(arguments)
+		}
+		gtag('js', new Date())
+
+		gtag('config', 'G-V1QPMRWL3F')
+	</script>
 	<body class='text-neutral-100 font-thin scroll-smooth'>
 		<img
 			class='fixed top-0 bottom-0 object-cover w-full h-full -z-10 opacity-60'
