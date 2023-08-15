@@ -21,24 +21,37 @@ import Footer from '../components/structure/Footer.astro'
 		<meta name='viewport' content='width=device-width' />
 		<meta name='generator' content={Astro.generator} />
 		<link rel='icon' href='/favicon.ico' type='image/x-icon' />
-		 <link rel="sitemap" href="/sitemap-index.xml" />
+		<link rel='sitemap' href='/sitemap-index.xml' />
 		<meta
 			name='google-site-verification'
 			content='dcvxSJjVF2vSMN7HxsQ9Yos7HjcDeuyn_tnwba60e1A'
 		/>
 		<title>{title}</title>
-	</head>
-	<script async src='https://www.googletagmanager.com/gtag/js?id=G-V1QPMRWL3F'
-	></script>
-	<script>
-		window.dataLayer = window.dataLayer || []
-		function gtag() {
-			dataLayer.push(arguments)
-		}
-		gtag('js', new Date())
+		<script type='application/ld+json'>
+			{
+				"@context": "http://schema.org",
+				"@type": "WebSite",
+				"name": "Web Developer Portfolio",
+				"description": "Showcasing the web development work of Mihai Postelnicu.",
+				"url": "https://mihaipostelnicu.com",
+				"publisher": {
+					"@type": "Person",
+					"name": "Mihai Postelnicu"
+				}
+			}
+		</script>
+		<script async src='https://www.googletagmanager.com/gtag/js?id=G-V1QPMRWL3F'
+		></script>
+		<script>
+			window.dataLayer = window.dataLayer || []
+			function gtag() {
+				dataLayer.push(arguments)
+			}
+			gtag('js', new Date())
 
-		gtag('config', 'G-V1QPMRWL3F')
-	</script>
+			gtag('config', 'G-V1QPMRWL3F')
+		</script>
+	</head>
 	<body class='text-neutral-100 font-thin scroll-smooth'>
 		<img
 			class='fixed top-0 bottom-0 object-cover w-full h-full -z-10 opacity-60'
