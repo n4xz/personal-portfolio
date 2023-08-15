@@ -1,1 +1,4 @@
 Sitemap: https://www.mihaipostelnicu.com/sitemap.xml
+User-agent: *
+Disallow:
+
